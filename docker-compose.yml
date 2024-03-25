@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    image: python_todo_list
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+  postgre:
+    image: "postgres"
+    ports:
+      - "5432:5432"
